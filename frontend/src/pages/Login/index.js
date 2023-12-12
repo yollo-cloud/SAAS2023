@@ -11,6 +11,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
+
 import { i18n } from "../../translate/i18n";
 
 import { AuthContext } from "../../context/Auth/AuthContext";
@@ -128,7 +129,7 @@ const Login = () => {
 						fullWidth
 						variant="contained"
 						color="primary"
-						className={style.submit}
+						className={classes.submit}
 					>
 						{i18n.t("login.buttons.submit")}
 					</Button>
