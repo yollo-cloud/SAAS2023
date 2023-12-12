@@ -10,6 +10,7 @@ import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import style from "./style.module.css";
 
 import { i18n } from "../../translate/i18n";
 
@@ -34,11 +35,11 @@ const useStyles = makeStyles(theme => ({
 	root: {
 		width: "100vw",
 		height: "100vh",
-		//background: "linear-gradient(to right, #76EE00 , #76EE00 , #458B00)",
-		backgroundImage: "url(https://siteconnect.com.br/wp-content/uploads/2023/03/cinema-scaled-1.jpg)",
-		backgroundRepeat: "no-repeat",
-		backgroundSize: "100% 100%",
-		backgroundPosition: "center",
+		background: "#7752FE",
+		//backgroundImage: "url(https://siteconnect.com.br/wp-content/uploads/2023/03/cinema-scaled-1.jpg)",
+		//backgroundRepeat: "no-repeat",
+		//backgroundSize: "100% 100%",
+		//backgroundPosition: "center",
 		display: "flex",
 		flexDirection: "column",
 		alignItems: "center",
@@ -91,7 +92,7 @@ const Login = () => {
 			<CssBaseline/>
 			<div className={classes.paper}>
 				<div>
-					<img style={{ margin: "0 auto", width: "100%" }} src={logo} alt="Whats" />
+					<img style={{ margin: "0 auto", max-width: "100%", width: "170px" }} src={logo} alt="Whats" />
 				</div>
 				{/*<Typography component="h1" variant="h5">
 					{i18n.t("login.title")}
@@ -128,7 +129,7 @@ const Login = () => {
 						fullWidth
 						variant="contained"
 						color="primary"
-						className={classes.submit}
+						className={style.submit}
 					>
 						{i18n.t("login.buttons.submit")}
 					</Button>
